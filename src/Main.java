@@ -89,7 +89,7 @@ public class Main {
         return sum;
     }
     // Визначення номерів рядків елементи яких впорядковані за зростанням
-    public static void getStrNum (int[][] arr, int m , int n) {
+    private static void getStrNum (int[][] arr, int m , int n) {
         System.out.println("Номер впорядкованого/-их рядка/-ів: ");
         for (int i = 0; i < m; i++) {
             boolean ordered = true;
