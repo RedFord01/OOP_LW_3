@@ -6,15 +6,18 @@ public class Main {
         System.out.println("Введіть розмір одномірного масиву:");
         int sz = input.nextInt();
         int[] array = new int[sz];
+
         System.out.println("Введений масив:");
         for (int i = 0; i < sz; i++) {
             array[i] = (int) (Math.random()*10);
             System.out.print(array[i] + " ");
         }
+
         System.out.println("\nВведіть кількість рядків матриці:");
         int m = input.nextInt();
         System.out.println("Введіть кількість стовпців матриці:");
         int n = input.nextInt();
+
         int[][] matrix = new int[m][];
         System.out.println("Введена матриця:");
         for (int i = 0; i < m; i++) {
@@ -25,6 +28,7 @@ public class Main {
             }
             System.out.print("\n");
         }
+
         System.out.println("\nНомер максимального елементу: " + getMaxElNum(array));
         System.out.println("Добуток елементів між нулями: " + getProduct(array));
         System.out.println("Сума елементів: " + getSum(matrix, m, n));
